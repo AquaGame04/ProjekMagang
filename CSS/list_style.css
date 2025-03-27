@@ -1,0 +1,135 @@
+/* Styles for game list */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    margin: 0;
+    width: auto;
+    height: 1250px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game-txt {
+    position: absolute;
+    bottom: 290px;
+    left: 12%;
+    transform: translateX(-50%);
+    font-family: Arial, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+    z-index: 200;
+    border: 2px solid rgb(81, 81, 81);
+    border-radius: 5px;
+    padding: 0px 5px 0 5px;
+    background: #FFFFFF;
+    
+}
+
+.GameList {
+    width: 100%;
+    height: 100%;
+    bottom: -364px;
+    background: #C5C4C4;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px 10px 10px 10px;
+    box-sizing: border-box;
+    position: relative; /* Changed from absolute to relative */
+    overflow: visible; /* Allow content to flow naturally */
+    border-top: 2px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.game-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+    width: 200px;
+    background: #606060;
+    border-radius: 10px;
+    border: 2px solid #1f1f1f;
+    padding-bottom: 10px;
+    text-align: center;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.game-info-container img {
+    padding: 5px;
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    user-select: none;
+    border-radius: 10px;
+    border-radius: 8px;
+}
+
+.game-info-container p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.game-info-container a {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #1f1f1f;
+    width: 130px;
+}
+
+.game-info-container a:hover {
+    text-decoration: underline;
+}
+
+.game-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #1f1f1f;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    padding: 3px;
+    text-align: center;
+}
+.game-name{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;
+    background: #1f1f1f;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    padding: 3px;
+    text-align: center;
+}
+
+.footer-container {
+    width: 100%;
+    background-color: #4f4f4f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute; /* Fix it to the bottom */
+    bottom: -700px;
+    left: 0;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}

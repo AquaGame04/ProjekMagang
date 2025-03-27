@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment History</title>
+    <link rel="stylesheet" href="../css/history.css">
+    <link rel="stylesheet" href="../css/header_style.css">
+    <link rel="stylesheet" href="../css/dashboard_style.css">
+</head>
+<body>
+    <div class="profile-container" id="profileContainer" style="display: none;">
+        <!-- Profile content goes here -->
+        <h2>User Profile</h2>
+        <p>Name: John Doe</p>
+        <p>Email: john.doe@example.com</p>
+    </div>
+
+    <div class="frame5">
+        <div class="rectangle1"></div>
+        <div class="Logo">Logo</div>
+        <div class="ellipse1" id="toggleProfile"> <!-- Add an ID for targeting -->
+            <img src="../IMG/images(2).jpg" alt="PP" class="profile-icon">
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="dashboard">
+            <div class="home-txt">
+                <a href="Home.html">Beranda</a>
+            </div>
+            <div class="game-list-txt">
+                <a href="Game_List.html">Daftar Game</a>
+            </div>
+            <div class="history-txt">
+                <a href="History.html">History</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="history-container">
+        <h1>Payment History</h1>
+        <div class="history-list">
+            <!-- Example of a single history item -->
+            <div class="history-item">
+                <p><strong>Game:</strong> MLBB</p>
+                <p><strong>Amount:</strong> $10</p>
+                <p><strong>Date:</strong> 2023-10-01</p>
+            </div>
+            <div class="history-item">
+                <p><strong>Game:</strong> Pubg</p>
+                <p><strong>Amount:</strong> $100</p>
+                <p><strong>Date:</strong> 2024-10-01</p>
+            </div>
+            <div class="history-item">
+                <p><strong>Game:</strong> Steam</p>
+                <p><strong>Amount:</strong> $150</p>
+                <p><strong>Date:</strong> 2013-10-01</p>
+            </div>
+            <div class="history-item">
+                <p><strong>Game:</strong> Genshin</p>
+                <p><strong>Amount:</strong> $80</p>
+                <p><strong>Date:</strong> 2123-10-01</p>
+            </div>
+            <!-- Additional history items will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="../js/scripts.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

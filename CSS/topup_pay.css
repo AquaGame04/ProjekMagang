@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body {
+    margin: 0;
+    width: auto;
+    height: 1250px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topup-container {
+    width: 1300px;
+    margin: 50px auto;
+    position: relative;
+    top: 50px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+}
+
+.package-container, .payment-method-container, .payment-process-container {
+    margin-bottom: 30px;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.package-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.package-button img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.package-button p {
+    font-size: 14px;
+    color: #333;
+}
+
+.package-button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.package-button.selected {
+    border-color: #4CAF50;
+    background-color: #d4f8d4;
+}
+
+.pay-now-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pay-now-button:hover {
+    background-color: #45a049;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
+
+.payment-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.payment-button img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.payment-button p {
+    font-size: 14px;
+    color: #333;
+}
+
+.payment-button:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.payment-button.selected {
+    border-color: #4CAF50;
+    background-color: #d4f8d4;
+}
+
+h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.footer-container {
+    width: 100%;
+    background-color: #4f4f4f;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute; /* Fix it to the bottom */
+    bottom: -700px;
+    left: 0;
+    z-index: 1000;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}

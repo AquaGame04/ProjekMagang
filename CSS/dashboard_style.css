@@ -1,0 +1,83 @@
+.dashboard{
+    width: 300px;
+    height: 1000px;
+    background: #4f4f4f;
+    z-index: 101;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.dashboard-container {
+    position: fixed;
+    top: 0;
+    left: -300px; /* Initially hidden off-screen */
+    height: 100%;
+    transition: left 0.3s ease; /* Smooth slide-in effect */
+    z-index: 1000;
+}
+.dashboard-container.active {
+    left: 0; /* Slide in when active */
+}
+.dashboard a {
+    text-decoration: none;
+    color: #ffffff; /* Ensure consistent text color */
+    font-family: Arial, sans-serif; /* Ensure consistent font */
+    font-size: 20px; /* Adjust font size for readability */
+    padding: 5px 10px; /* Add padding for better spacing */
+    background: #4f4f4f; /* Background color for links */
+    border-radius: 5px; /* Rounded corners for links */
+    display: inline-block; /* Ensure proper spacing */
+    transition: background 0.3s ease; /* Smooth hover effect */
+}
+
+.dashboard a:hover {
+    background: #6f6f6f; /* Slightly lighter background on hover */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+.profile-container {
+    position: fixed;
+    top: 100px;
+    right: 50px;
+    width: 300px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+}
+
+.profile-container h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.profile-container p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+.ellipse1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%;
+    background-color: #ccc; /* Optional background color */
+    cursor: pointer;
+}
+
+.profile-icon {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #000000; /* Optional border */
+}
